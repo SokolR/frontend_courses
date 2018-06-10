@@ -1,0 +1,425 @@
+html{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+div{
+  padding: 15px;
+  
+}
+
+#red01 + label{
+  color: red;
+  margin-left: 20px;
+}
+
+#red02 + label{
+  color: red;
+  margin-left: 20px;
+}
+
+#red03 + label{
+  color: red;
+  margin-left: 20px;
+}
+
+#red04 + label{
+  color: red;
+  margin-left: 20px;
+}
+
+#red05 + label{
+  color: red;
+  margin-left: 20px;
+}
+
+#red06 + label{
+  color: red;
+  margin-left: 20px;
+}
+
+#red07 + label{
+  color: red;
+  margin-left: 20px;
+}
+
+
+#green01 + label{
+  color: green;
+  margin-left: 20px;
+}
+
+#green02 + label{
+  color: green;
+  margin-left: 20px;
+}
+
+#green03 + label{
+  color: green;
+  margin-left: 20px;
+}
+
+#green04 + label{
+  color: green;
+  margin-left: 20px;
+}
+
+#green05 + label{
+  color: green;
+  margin-left: 20px;
+}
+
+#green06 + label{
+  color: green;
+  margin-left: 20px;
+}
+
+#green07 + label{
+  color: green;
+  margin-left: 20px;
+}
+
+#blue01 + label{
+  color: blue;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+#blue02 + label{
+  color: blue;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+#blue03 + label{
+  color: blue;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+#blue04 + label{
+  color: blue;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+#blue05 + label{
+  color: blue;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+#blue06 + label{
+  color: blue;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+#blue07 + label{
+  color: blue;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+.red1{
+  display: none;
+  color: white;
+  background: red;
+  border-radius: 5px;
+  padding: 7px;
+  width: 70px;
+  text-align: center;
+}
+
+.green1{
+  display: none;
+  color: white;
+  background: green;
+  border-radius: 5px;
+  padding: 7px;
+  width: 70px;
+  text-align: center;
+}
+
+.blue1{
+  display: none;
+  color: white;
+  background: blue;
+  border-radius: 5px;
+  padding: 7px;
+  width: 70px;
+  text-align: center;
+}
+
+.red2{
+  display: none;
+  color: white;
+  background: red;
+  border-radius: 5px;
+  padding: 7px;
+  width: 70px;
+  text-align: center;
+}
+
+.green2{
+  display: none;
+  color: white;
+  background: green;
+  border-radius: 5px;
+  padding: 7px;
+  width: 70px;
+  text-align: center;
+}
+
+.blue2{
+  display: none;
+  color: white;
+  background: blue;
+  border-radius: 5px;
+  padding: 7px;
+  width: 70px;
+  text-align: center;
+}
+
+.red3{
+  display: none;
+  color: white;
+  background: red;
+  border-radius: 5px;
+  padding: 7px;
+  width: 70px;
+  text-align: center;
+}
+
+.green3{
+  display: none;
+  color: white;
+  background: green;
+  border-radius: 5px;
+  padding: 7px;
+  width: 70px;
+  text-align: center;
+}
+
+.blue3{
+  display: none;
+  color: white;
+  background: blue;
+  border-radius: 5px;
+  padding: 7px;
+  width: 70px;
+  text-align: center;
+}
+
+.red4{
+  display: none;
+  color: white;
+  background: red;
+  border-radius: 5px;
+  padding: 7px;
+  width: 70px;
+  text-align: center;
+}
+
+.green4{
+  display: none;
+  color: white;
+  background: green;
+  border-radius: 5px;
+  padding: 7px;
+  width: 70px;
+  text-align: center;
+}
+
+.blue4{
+  display: none;
+  color: white;
+  background: blue;
+  border-radius: 5px;
+  padding: 7px;
+  width: 70px;
+  text-align: center;
+}
+
+.red5{
+  display: none;
+  color: white;
+  background: red;
+  border-radius: 5px;
+  padding: 7px;
+  width: 70px;
+  text-align: center;
+}
+
+.green5{
+  display: none;
+  color: white;
+  background: green;
+  border-radius: 5px;
+  padding: 7px;
+  width: 70px;
+  text-align: center;
+}
+
+.blue5{
+  display: none;
+  color: white;
+  background: blue;
+  border-radius: 5px;
+  padding: 7px;
+  width: 70px;
+  text-align: center;
+}
+
+.red6{
+  display: none;
+  color: white;
+  background: red;
+  border-radius: 5px;
+  padding: 7px;
+  width: 70px;
+  text-align: center;
+}
+
+.green6{
+  display: none;
+  color: white;
+  background: green;
+  border-radius: 5px;
+  padding: 7px;
+  width: 70px;
+  text-align: center;
+}
+
+.blue6{
+  display: none;
+  color: white;
+  background: blue;
+  border-radius: 5px;
+  padding: 7px;
+  width: 70px;
+  text-align: center;
+}
+
+.red7{
+  display: none;
+  color: white;
+  background: red;
+  border-radius: 5px;
+  padding: 7px;
+  width: 70px;
+  text-align: center;
+}
+
+.green7{
+  display: none;
+  color: white;
+  background: green;
+  border-radius: 5px;
+  padding: 7px;
+  width: 70px;
+  text-align: center;
+}
+
+.blue7{
+  display: none;
+  color: white;
+  background: blue;
+  border-radius: 5px;
+  padding: 7px;
+  width: 70px;
+  width: 70px;
+  text-align: center;
+}
+
+input[type=checkbox]{
+  display: none;
+}
+
+input[class=redone]:checked ~ .red1{
+  display: inline-block;
+}
+  
+input[class=greenone]:checked ~ .green1{
+  display: inline-block;
+}
+
+input[class=blueone]:checked ~ .blue1{
+  display: inline-block;
+}
+
+input[class=redtwo]:checked ~ .red2{
+  display: inline-block;
+}
+  
+input[class=greentwo]:checked ~ .green2{
+  display: inline-block;
+}
+
+input[class=bluetwo]:checked ~ .blue2{
+  display: inline-block;
+}
+
+input[class=redthree]:checked ~ .red3{
+  display: inline-block;
+}
+  
+input[class=greenthree]:checked ~ .green3{
+  display: inline-block;
+}
+
+input[class=bluethree]:checked ~ .blue3{
+  display: inline-block;
+}
+
+input[class=redfour]:checked ~ .red4{
+  display: inline-block;
+}
+  
+input[class=greenfour]:checked ~ .green4{
+  display: inline-block;
+}
+
+input[class=bluefour]:checked ~ .blue4{
+  display: inline-block;
+}
+
+input[class=redfive]:checked ~ .red5{
+  display: inline-block;
+}
+  
+input[class=greenfive]:checked ~ .green5{
+  display: inline-block;
+}
+
+input[class=bluefive]:checked ~ .blue5{
+  display: inline-block;
+}
+
+input[class=redsix]:checked ~ .red6{
+  display: inline-block;
+}
+  
+input[class=greensix]:checked ~ .green6{
+  display: inline-block;
+}
+
+input[class=bluesix]:checked ~ .blue6{
+  display: inline-block;
+}
+
+input[class=redseven]:checked ~ .red7{
+  display: inline-block;
+}
+  
+input[class=greenseven]:checked ~ .green7{
+  display: inline-block;
+}
+
+input[class=blueseven]:checked ~ .blue7{
+  display: inline-block;
+}

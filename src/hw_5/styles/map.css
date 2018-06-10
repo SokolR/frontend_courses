@@ -1,0 +1,31 @@
+.map{
+  width: 90%;
+  height: auto;
+  justify-self: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.map-way{
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+.map-phone{
+  position: absolute;
+    top: 0;
+    width: 70%;
+    left: 10%;
+}
+
+.map > button{
+  border: none;
+  background-color: #fff;
+  width: 60px;
+  height: 60px;
+  transform: rotate(270deg);
+  position: absolute;
+  bottom: 5%;
+  left: 2%;
+}

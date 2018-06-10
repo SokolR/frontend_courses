@@ -1,0 +1,30 @@
+.main-header{
+  width: 90%;
+  min-height: 120px;
+  justify-self: center;
+  padding: 60px 10px 0;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1 1 auto;
+}
+
+.main-header__logo{
+  margin-right: auto;
+}
+
+.navigation-panel__item{
+  padding: 0 0 0 25px;
+  font-size: 14px;
+}
+
+.navigation-panel__item-link{
+  color: #1C1B1B;
+}
+
+.logo__text{
+  font-family: 'Kerola';
+  font-size: 12px;
+  font-weight: 400;
+  color: #616161;
+  margin-top: 10px;
+}

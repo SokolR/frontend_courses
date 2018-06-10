@@ -1,0 +1,71 @@
+.backgroundColorMain{
+  color: brown;
+  font-size: 30px;
+}
+.refColorMain{
+  color:lightgray;
+} 
+.backgroundColorFirstTask{
+  background-color:azure;        
+}
+.firstTextColor{
+  color:crimson;  
+}
+.secondTextColor{
+  color:black;
+}
+.thirdTextColor{
+  color:brown;
+}
+.refColor{
+  color:chocolate;
+}
+.stepOne{
+  background-color: red;
+  color:white;  
+}
+.stepTwo{
+  background-color:burlywood;
+  color:grey;
+}
+.stepThree{
+  background-color:yellow;
+  color: black;
+}
+.linkOne{
+  color:red;
+}
+.linkTwo{
+  color:aqua;
+}
+.linkThree{
+  color:yellow;
+}
+.backgroundColorThirdTask{
+  background-color: black;
+}
+.textAlign{
+  text-align: center;
+}
+.tableScale{
+  width: 40%;
+}
+.listStyle{
+  list-style-type: decimal-leading-zero;
+}
+.listnextStyle{
+  list-style-type: disc;
+}
+.formula { 
+  font-size: 1.6em; 
+  font-style: italic; 
+ }
+ .formula sup, .formula sub {
+  font-style: normal; 
+  font-size: 0.6em; 
+  color: red; 
+ }
+ .formula sub {
+  color: blue; 
+ }
+

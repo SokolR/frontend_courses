@@ -1,0 +1,50 @@
+  #main{}
+  #header{
+    background: rgb(243, 249, 242);
+    width: 1000px;
+    height: 100px;
+    position: absolute;
+    left: 460px;
+    top: 20px;
+    }
+    #image{
+    background: rgb(243, 249, 242);
+    width: 565px;
+    height: 400px;
+    position: absolute;
+    left: 460px;
+    top: 100px;    
+    }
+    p h2{
+      margin-top: 400px;
+    }
+    img{
+      margin: 5px;
+    }
+    h1{
+      text-align: center;
+    }
+    h2{
+      margin: 7px;
+    }
+    h4{
+      margin: 7px;
+    }    
+    #content{
+    background: rgb(243, 249, 242);
+    width: 435px;
+    height: 400px;
+    position: absolute;
+    left: 1025px;
+    top: 100px;
+    }
+    #footer{
+    background: rgb(243, 249, 242);
+    width: 1000px;
+    height: 5885px;
+    position: absolute;
+    left: 460px;
+    top: 500px;
+    
+    }
+        

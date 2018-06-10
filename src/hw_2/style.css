@@ -1,0 +1,33 @@
+html{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+body{
+  background-color: lawngreen;
+}
+
+button{
+  width: 200px;
+  height: 50px;
+  background-color: blueviolet;
+  color: azure; 
+}
+
+.list-buttons{
+  margin-top: 20px;
+}
+
+a{
+  color: azure;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+button:hover{
+  background-color: coral;
+}
+
+a:hover{
+  color: aqua;
+}

@@ -1,0 +1,68 @@
+
+
+.page-container__top{
+  width: 100%;
+  height: 707px;
+  max-width: 1150px;
+  max-height: 500px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  background-image: url('../img/Layer5.jpg');
+  background-color: #E1E7ED;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.search-form{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-form__text h1{
+  text-align: center;
+  font-size: 30px;
+  font-family: "Roboto";
+  color: rgb(51, 54, 59);
+}
+
+.search-form__text h4{
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(51, 54, 59);
+  padding-top: 15px;
+}
+
+.search-form__form{
+  display: flex;
+}
+
+::-webkit-input-placeholder{
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(202, 205, 211);
+}
+
+.search-form__form > input{
+  width: 527px;
+  height: 50px;
+  padding: 0 10px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px; 
+  background-color: #FFFFFF;
+  align-self: center;
+  border: none;
+}
+
+.search-form__form > button{
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #8C91FF;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px; 
+} 

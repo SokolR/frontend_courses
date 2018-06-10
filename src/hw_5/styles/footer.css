@@ -1,0 +1,134 @@
+.main-footer{
+  width: 100%;
+  height: auto;
+}
+
+.main-footer-left{
+  background-color: #1C1B1B;
+  width: 100%;
+  height: auto;
+  padding-bottom: 150px;
+}
+
+.main-footer-right{
+  background-color: #FEFFFE;
+  width: 100%;
+  height: auto;
+  padding-bottom: 150px;
+}
+
+.main-footer-left__logo{
+  display: block;
+  width: 75px;
+  height: auto;
+  margin: 100px 0 0 200px;
+}
+
+.main-footer-left__form{
+  margin: 100px 0 0 200px;
+}
+
+.main-footer-left__form > span{
+  font-size: 14px;
+  color: #FEFFFE;
+  font-weight: 400;
+}
+
+.main-footer-left__form > form > input{
+  border: none;
+  width: 300px;
+  height: 50px;
+  padding-left: 20px;
+  background-color: #232323;
+  color: #575757;
+  margin-top: 30px;
+}
+
+.main-footer-left__form > form > button{
+  border: none;
+  background-color: #FEFFFE;
+  height: 50px;
+  width: 50px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.main-footer-left__copyright{
+  color: #6e6d6d;
+  margin: 50px 0 0 200px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 150px;
+  
+}
+
+.main-footer-right__social{
+  flex: 1 1 auto;
+  flex-direction: row;  
+  justify-content: flex-start;
+  padding-left: 100px;
+  padding-top: 280px;
+}
+
+.follow{
+  display: block;
+  width: 50px;
+  height: 20px;
+  color: #515665;
+  font-weight: 200;
+  font-size: 14px;
+  margin-right: 15px;
+}
+
+.medium > svg{
+  display: block;
+  width: 25px;
+  height: auto;
+  margin-right: 15px;
+
+}
+
+.behance > svg{
+  display: block;
+  width: 25px;
+  height: auto;
+  margin-right: 15px;
+
+}
+
+.dribbble > svg{
+  display: block;
+  width: 25px;
+  height: auto;
+  margin-right: 15px;
+
+}
+
+.twitter > svg{
+  display: block;
+  width: 25px;
+  height: auto;
+  margin-right: 15px;
+
+}
+
+.instagram > svg{
+  display: block;
+  width: 25px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.main-footer-right__footer{
+  margin-left: 100px;
+  margin-top: 160px;
+  justify-content: flex-start;
+}
+
+
+.main-footer-right__footer > a{
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  margin-right: 20px;
+}

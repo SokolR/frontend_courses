@@ -1,0 +1,44 @@
+.caption{
+  width: 90%;
+  min-height: 160px;
+  justify-self: center;
+  padding: 0 10px;
+}
+
+.caption >h1{
+  font-family: 'Kerola';
+  font-weight: 200;
+  font-size: 4.7rem;
+}
+
+.caption-footer{
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 20px 0 20px 0; 
+}
+
+.caption-footer__ref > a{
+  text-transform: uppercase;
+  color: #42c5d8;
+}
+
+.ref-underline{  
+  margin-top: 10px;
+  width: 132px;
+  height: 2px;
+  background: #42c5d8;
+}
+
+@keyframes ref-underline{
+  from { margin-left: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+.ref-underline:hover{
+  animation: 1s linear .2s;
+}
+
+.caption-footer__arrow > button{
+  border: none;
+  background: none;
+}
