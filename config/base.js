@@ -9,8 +9,10 @@ const baseConf = (_path) => {
     // and add path and name to entry array
     const VENDORS_NAME = 'vendors';
     const entry = {
-        index: ['babel-polyfill', './src/index/index.js'],        
-        hw_6: ['./src/hw_6/hw_6.js']
+        index: ['babel-polyfill', './src/index/index.js'],
+        hw_6: ['./src/hw_6/hw_6.js'],
+        hw_9: ['./src/hw_9/hw_9.js'],
+        hw_10: ['./src/hw_10/hw_10.js']
     };
 
     const plugins = Object.keys(entry).reduce((acc, name) => {
@@ -22,7 +24,7 @@ const baseConf = (_path) => {
             filename: `./${name}.html`,
         }));
         acc.push(new ExtractTextPlugin({
-            filename: `[name].css`,
+            filename: `styles/[name].css`,
             allChunks: false
         }));
 
@@ -46,7 +48,7 @@ const baseConf = (_path) => {
     return {
         entry,
         output: {
-            filename: '[name].js',
+            filename: 'js/[name].js',
         },
         module: {
             rules: [
@@ -88,11 +90,11 @@ const baseConf = (_path) => {
                      * You can add here any file extension you want to get copied to your output
                      */
                     test: /\.(png|jpg|jpeg|gif|svg)$/,
-                    loader: 'file-loader?publicPath=./&name=assets/images/[name].[ext]'
+                    loader: 'file-loader?publicPath=../&name=assets/images/[name].[ext]'
                 },
                 {
                     test: /\.(eot|ttf|woff|woff2)$/,
-                    loader: 'file-loader?publicPath=./&name=assets/fonts/[name].[ext]'
+                    loader: 'file-loader?publicPath=../&name=assets/fonts/[name].[ext]'
                 }
             ]
         },
