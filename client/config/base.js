@@ -13,7 +13,8 @@ const baseConf = (_path) => {
         hw_6: ['./src/hw_6/hw_6.js'],
         hw_9: ['./src/hw_9/hw_9.js'],
         hw_10: ['./src/hw_10/hw_10.js'],
-        hw_11: ['./src/hw_11/hw_11.js']
+        hw_11: ['./src/hw_11/hw_11.js'],
+        hw_13: ['./src/hw_13/hw_13.js']
     };
 
     const plugins = Object.keys(entry).reduce((acc, name) => {

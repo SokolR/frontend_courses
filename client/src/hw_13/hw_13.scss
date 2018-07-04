@@ -1,0 +1,23 @@
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20vh auto;
+  max-width: 200px;
+  height: auto;
+}
+
+.lights {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70px;
+
+  &__element {
+    width: 40px;
+    height: 40px;
+    border: 1px solid grey;
+    border-radius: 50%;
+  }
+
+}
