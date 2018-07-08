@@ -14,7 +14,9 @@ const baseConf = (_path) => {
         hw_9: ['./src/hw_9/hw_9.js'],
         hw_10: ['./src/hw_10/hw_10.js'],
         hw_11: ['./src/hw_11/hw_11.js'],
-        hw_13: ['./src/hw_13/hw_13.js']
+        hw_13: ['./src/hw_13/hw_13.js'],
+        hw_14: ['./src/hw_14/hw_14.js'],
+        hw_15: ['./src/hw_15/hw_15.js']
     };
 
     const plugins = Object.keys(entry).reduce((acc, name) => {
@@ -50,54 +52,54 @@ const baseConf = (_path) => {
     return {
         entry,
         output: {
-            filename: 'js/[name].js',
+            filename: '[name].js',
         },
         module: {
             rules: [
+            {
+                test: /\.html$/,
+                use: [
                 {
-                    test: /\.html$/,
-                    use: [
-                        {
-                            loader: 'html-loader'
-                        }
-                    ]
-                },
-                {
-                    test: /\.js/,
-                    exclude: /(node_modules)/,
-                    use: [
-                        {
-                            loader: 'babel-loader',
-                            options: {
-                                presets: ['env']
-                            }
-                        }
-                    ]
-                },
-                {
-                    test: /\.scss/,
-                    loader: ExtractTextPlugin.extract({
-                        fallback: 'style-loader',
-                        use: ['css-loader', 'autoprefixer-loader?browsers=last 5 version', 'sass-loader']
-                    })
-                },
-                {
-
-                    /**
-                     * ASSET LOADER
-                     * Reference: https://github.com/webpack/file-loader
-                     * Copy png, jpg, jpeg, gif, svg, woff, woff2, ttf, eot files to output
-                     * Rename the file using the asset hash
-                     * Pass along the updated reference to your code
-                     * You can add here any file extension you want to get copied to your output
-                     */
-                    test: /\.(png|jpg|jpeg|gif|svg)$/,
-                    loader: 'file-loader?publicPath=../&name=assets/images/[name].[ext]'
-                },
-                {
-                    test: /\.(eot|ttf|woff|woff2)$/,
-                    loader: 'file-loader?publicPath=../&name=assets/fonts/[name].[ext]'
+                    loader: 'html-loader'
                 }
+                ]
+            },
+            {
+                test: /\.(js|jsx)/,
+                exclude: /(node_modules)/,
+                use: [
+                {
+                    loader: 'babel-loader',
+                    options: {
+                    presets: ['env']
+                    }
+                }
+                ]
+            },
+            {
+                test: /\.scss/,
+                loader: ExtractTextPlugin.extract({
+                fallback: 'style-loader',
+                use: ['css-loader', 'autoprefixer-loader?browsers=last 5 version', 'sass-loader']
+                })
+            },
+            {
+
+                /**
+                 * ASSET LOADER
+                 * Reference: https://github.com/webpack/file-loader
+                 * Copy png, jpg, jpeg, gif, svg, woff, woff2, ttf, eot files to output
+                 * Rename the file using the asset hash
+                 * Pass along the updated reference to your code
+                 * You can add here any file extension you want to get copied to your output
+                 */
+                test: /\.(png|jpg|jpeg|gif|svg)$/,
+                loader: 'file-loader?publicPath=./&name=assets/images/[name].[ext]'
+            },
+            {
+                test: /\.(eot|ttf|woff|woff2)$/,
+                loader: 'file-loader?publicPath=./&name=assets/fonts/[name].[ext]',
+            }
             ]
         },
         plugins
