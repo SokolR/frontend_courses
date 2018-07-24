@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Ajax } from '../../utils/ajax.util';
 import './msgFormReact.scss';
 
-const URL = 'https://evening-dawn-11092.herokuapp.com/comments';
+const URL = 'http://localhost:4001/comments';
 
 export class MsgForm extends React.Component {
   constructor() {
