@@ -8,3 +8,7 @@
 @import './styles/sidebar.scss';
 
 
+.content-wrapper {
+  @include pageWrapper;
+  max-width: $max-page-width;
+}
