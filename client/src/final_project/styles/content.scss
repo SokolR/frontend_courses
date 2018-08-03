@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 @import '../../common/styles/base.scss';
 @import '../../common/styles/variables.scss';
 @import '../../common/styles/mixins.scss';
@@ -18,23 +19,32 @@
       height: $nav-height;
       padding: 30px 24px 28px 30px;
       border-bottom: 1px solid #d8d8d821;
-      
-    }
-    input {
-      @include btnResetDefault;
-      width: 183px;
-      height: 33px;
-      border-radius: 100px;
-      background-color: #313131;
-      padding-left: 20px;
-      font-family: Lato;
-      font-size: 12px;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: normal;
-      letter-spacing: 1px;
-      color: #bbbbbb;
+      position: relative;
+            
+      input {
+        @include btnResetDefault;
+        width: 183px;
+        height: 33px;
+        border-radius: 100px;
+        background-color: #313131;
+        padding-left: 20px;
+        font-family: Lato;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 1px;
+        color: #bbbbbb;
+      }
+
+      .fa-search {
+        transform: rotate(90deg);
+        color: #6b6b6b;
+        position: absolute;
+        top: 35px;
+        right: 30px;
+      }
     }
   }
 }
