@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://use.fontawesome.com/releases/v5.2.0/css/all.css');
 @import '../../common/styles/base.scss';
 @import '../../common/styles/variables.scss';
 @import '../../common/styles/mixins.scss';
@@ -9,18 +9,18 @@
 
   .sidebar {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 231px;
     height: auto;
-    border: 1px solid green;
     background-color: #171717;
 
     &-search {
       height: $nav-height;
-      padding: 30px 24px 28px 30px;
-      border-bottom: 1px solid #d8d8d821;
+      padding: 30px 24px 28px 24px;
+      border-bottom: $sidebar-divider;
       position: relative;
-            
+      
       input {
         @include btnResetDefault;
         width: 183px;
@@ -44,6 +44,86 @@
         position: absolute;
         top: 35px;
         right: 30px;
+      }
+    }
+
+    &-nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: baseline;
+      height: 219px;
+      padding: 33px 23px;
+      border-bottom: $sidebar-divider;
+
+      &__item:nth-child(1)::before {
+        content: "\f26c";
+        color: #ffffff;
+      }
+
+      &__item:nth-child(2)::before {
+        content: "\f005";
+        color: #ffffff;
+      }
+
+      &__item:nth-child(3)::before {
+        content: "\f1ea";
+        color: #ffffff;
+      }
+
+      &__item:nth-child(4)::before {
+        content: "\f144";
+        color: #ffffff;
+      }
+
+      &__item {
+        font-family: Lato;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 1px;
+        color: #ffffff;
+
+        &:hover {
+          color: #f2d224;
+        }
+      }
+    }
+
+    &-account {
+      display: flex;
+      flex-direction: column;
+      width: 190px;
+      padding: 30px 25px;     
+
+      &__title {
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 1.2px;
+        color: #ffffff;  
+        padding-bottom: 18px;        
+      }
+
+      &__item {
+        font-family: Lato;
+        font-size: 10px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 3.4;
+        letter-spacing: 0.8px;
+        color: #969696;
+        text-transform: uppercase;
+
+        a {          
+          color: #5083f2;
+        }
       }
     }
   }
