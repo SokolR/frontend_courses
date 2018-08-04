@@ -18,6 +18,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      @include xs-mobile {
+        min-width: 480px;
+      }  
     }
 
     &__menu {
@@ -28,11 +31,26 @@
       align-items: flex-end;
       padding-right: 65px;
       background-image: $body-background-color;
+      @include tablet {
+        justify-content: flex-end;
+        padding-right: 0px;
+
+      }
+      @include mobile {
+        justify-content: flex-start;
+        padding-right: 0px;
+      }  
+      @include xs-mobile {
+        @include hidden;
+      }      
 
       .global-nav__item {
         margin: 0 7px 0 7px;
         position: relative;
-        padding-bottom: 14px;
+        padding-bottom: 14px;        
+        @include xs-mobile {
+          @include hidden;
+        }
         
         .global-nav__link {
           font-family: Lato;
@@ -44,13 +62,21 @@
           letter-spacing: 2px;
           text-align: right;
           color: #ffffff;
-          font-weight: 400;      
+          font-weight: 400;   
+          @include tablet {
+            font-size: 10px;
+          }
+          @include mobile {
+            font-size: 8px;
+          }
         }  
 
         .global-nav__link_list {
           @include hidden;
           position: absolute;
           top: 2.3rem;
+          z-index: 5;
+          background-color: aqua;
 
           &:hover {
             background-color: blue;

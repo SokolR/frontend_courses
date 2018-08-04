@@ -18,6 +18,6 @@ function showSlides() {
     if (slideIndex > slides.length) {slideIndex = 1} 
     slides[slideIndex-1].className += " slider-item__active";
     btn[slideIndex-1].className += " slider-btn__active"; 
-    setTimeout(showSlides, 2000);
+    setTimeout(showSlides, 4000);
     
 }

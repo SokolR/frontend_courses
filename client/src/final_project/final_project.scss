@@ -11,4 +11,5 @@
 .content-wrapper {
   @include pageWrapper;
   max-width: $max-page-width;
+  width: 100%;
 }

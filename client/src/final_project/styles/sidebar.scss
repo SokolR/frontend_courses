@@ -9,9 +9,18 @@
   flex-direction: column;
   justify-content: flex-start;
   width: 231px;
-  height: 100vh;
+  height: auto;
   background-color: #171717;
   z-index: 2;
+  @include tablet {
+    @include hidden;
+  }
+  @include mobile {
+    @include hidden;
+  }
+  @include xs-mobile {
+    @include hidden;
+  }
 
   &-search {
     height: $nav-height;
