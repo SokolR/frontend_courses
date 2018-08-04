@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://use.fontawesome.com/releases/v5.2.0/css/all.css');
+@import '../../common/styles/base.scss';
+@import '../../common/styles/variables.scss';
+@import '../../common/styles/mixins.scss';
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 231px;
+  height: auto;
+  background-color: #171717;
+  z-index: 2;
+  @include desktop-lg {
+    height: auto;
+  }
+  @include desktop {
+    height: auto;
+  }
+  @include laptop {
+    height: 100vh;
+  }
+  @include tablet {
+    @include visible;
+    position: absolute;
+    height: 200vh;
+  }
+  @include mobile {
+    @include hidden;
+  }
+  @include xs-mobile {
+    @include hidden;
+  }
+
+  &-search {
+    height: $nav-height;
+    padding: 30px 24px 28px 24px;
+    border-bottom: $sidebar-divider;
+    position: relative;
+    
+    input {
+      @include btnResetDefault;
+      width: 183px;
+      height: 33px;
+      border-radius: 100px;
+      background-color: #313131;
+      padding-left: 20px;
+      font-family: Lato;
+      font-size: 12px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 1px;
+      color: #bbbbbb;
+    }
+
+    .fa-search {
+      transform: rotate(90deg);
+      color: #6b6b6b;
+      position: absolute;
+      top: 35px;
+      right: 30px;
+    }
+  }
+
+  &-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+    height: 219px;
+    padding: 33px 23px;
+    border-bottom: $sidebar-divider;
+    
+    &__item {
+      font-family: Lato;
+      font-size: 12px;
+      font-weight: 400;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 1px;
+      color: #ffffff;
+
+      i {
+        color: #6b6b6b;
+        padding-right: 5px;
+        font-size: 1.3rem;
+      }
+
+      &:hover {
+        color: #f2d224;
+        
+        i{
+          color: #f2d224;
+        }
+      }
+    }
+  }
+
+  &-account {
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+    padding: 30px 25px;     
+
+    &__title {
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 1.2px;
+      color: #ffffff;  
+      padding-bottom: 18px;        
+    }
+
+    &__item {
+      font-family: Lato;
+      font-size: 10px;
+      font-weight: 400;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 3.4;
+      letter-spacing: 0.8px;
+      color: #969696;
+      text-transform: uppercase;
+
+      span {          
+        color: #5083f2;
+      }
+    }
+  }
+
+  &-logo {
+    display: flex;
+    align-items: center;
+    padding: 0 23px;
+    height: 49px;
+    background-color: #0d0d0d;
+    position: relative;
+
+    &::after {
+      content: "\2039";
+      color: #6b6b6b;
+      position: absolute;
+      transform: rotateZ(180deg);
+      font-size: 2.5rem;
+      font-weight: normal;
+      top: 10px;
+      right: 15px;
+    }
+
+    a {
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: 400;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 1.2px;
+      color: #ffffff;
+
+      span {
+        color: #27c6e7;
+      }
+    }
+  }
+
+  &-social {
+    display: flex;
+    flex-direction: column;
+    height: 132px;
+    padding: 0 23px;
+
+    &__item {
+      font-family: Lato;
+      font-size: 12px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2.75;
+      letter-spacing: 1px;
+      color: #6b6b6b;
+    }
+  }
+}

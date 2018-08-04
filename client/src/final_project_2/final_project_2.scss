@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import '../common/styles/base.scss';
+@import '../common/styles/variables.scss';
+@import '../common/styles/mixins.scss';
+
+@import './styles/header.scss';
+@import './styles/content.scss';
+@import './styles/sidebar.scss';
+
+
+.content-wrapper {
+  @include pageWrapper;
+  max-width: $max-page-width;
+  width: 100%;
+  position: relative;
+}

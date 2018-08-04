@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://use.fontawesome.com/releases/v5.2.0/css/all.css');
+@import '../../common/styles/base.scss';
+@import '../../common/styles/variables.scss';
+@import '../../common/styles/mixins.scss';
+
+
+.page-content {
+  display: flex;
+  background-image: linear-gradient(231deg, #f43e1e, #c32577);
+  @include tablet {
+    flex-direction: column;
+    height: 200vh;
+  }
+  @include mobile {
+    flex-direction: column;
+    height: 200vh;
+  }
+  @include xs-mobile {
+    flex-direction: column;
+    height: 200vh;
+  }
+
+
+  .profile {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    
+
+    &-img {
+      position: absolute;
+      top: -40px;
+      left: -210px;
+
+      @include desktop-lg {
+        top: -40px;
+        left: 120px;
+      }
+
+      @include desktop {
+        top: -40px;
+        left: 120px;
+      }
+
+      @include laptop {
+        top: -40px;
+        left: -210px;
+      }
+      @include tablet {
+        top: -10px;
+        left: 130px;
+      }
+      @include mobile {
+        top: -10px;
+        left: 20px;
+      }
+      @include xs-mobile {
+        position: absolute;
+        top: -10px;
+        left: -170px;
+      } 
+    }
+
+    &-description {      
+      width: 654px;
+      display: flex;
+      flex-direction: column;                 
+      @include tablet {   
+        margin-top: 940px;  
+      }
+      @include mobile {
+        margin-top: 940px;        
+      }
+      @include xs-mobile {
+        margin-top: 940px;
+        padding-left: 200px;
+      }  
+
+      &__rating {
+        width: 73px;
+        height: 33px;
+        border-radius: 100px;
+        background-color: #ffffff41;
+        box-shadow: 3px 3px 13px 0 rgba(0, 0, 0, 0.5);
+        align-self: flex-end;
+        margin: 26px 66px 8px 0;
+        padding: 7px 17px 11px 12px;
+
+        span {
+          font-family: Lato;
+          font-size: 12px;
+          font-weight: bold;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: 1px;
+          color: #ffffff;
+          padding-bottom: 2px;
+          
+          .fas {
+            font-size: 1.5rem;
+            color: #ffffff; 
+            margin: 0 10px 5px 0; 
+                
+            }
+        }         
+      }  
+      
+      &__name {
+        margin-top: 8px;
+
+        h1 {
+        font-family: Lato;
+        font-size: 90px;
+        font-weight: 400;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+        @include xs-mobile {
+          font-size: 50px;
+        }
+        }
+      }
+
+      &__bio {
+        margin-top: 8px;
+
+        &_occupation {
+          font-family: Lato;
+          font-size: 10px;
+          font-weight: 400;
+          text-transform: uppercase;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: 2px;
+          color: #ffffff;
+          margin-left: 8px;
+        }
+
+        &_summary {
+          width: 579px;
+          font-family: Lato;
+          font-size: 14px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.29;
+          letter-spacing: 1.3px;
+          color: #ffffff;
+          margin: 30px 0 0 8px;
+          @include xs-mobile {
+            width: 400px;
+          }
+        }
+
+        &_born {
+          font-family: Lato;
+          font-size: 12px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: 1px;
+          color: #ffffff;
+          margin: 34px 0 0 8px;
+        }
+
+        &_divider {
+          width: 579px;
+          height: 1px;
+          opacity: 0.2;
+          background-color: #ffffff;
+          margin-top: 38px;
+          @include xs-mobile {
+            width: 500px;
+          }
+        }
+      }
+
+      &__films {
+        width: 100%;
+        height: 300px;
+        
+        &_header {
+          position: relative;
+          
+
+          .profile-description__films_title {
+            font-family: Lato;
+            font-size: 24px;
+            font-weight: 400;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #ffffff;
+            margin: 34px 0 0 8px;
+          }
+
+          .slider-btns {
+            position: absolute;
+            top: 10px;
+            right: 63px;
+            
+            .slider-btn {
+              cursor: pointer;
+              width: 9px;
+              height: 9px;
+              background-color: #ffffff40;
+              margin: 0 2px;
+              border-radius: 50%;
+              display: inline-block;
+              transition: background-color 0.6s ease;
+
+              &:hover {
+                background-color: #ffffff;
+              }
+            }
+
+            .slider-btn__active {
+              background-color: #ffffff;
+            }
+          }
+        }
+
+        .slider-container {
+          display: flex;
+          flex-direction: row;
+          padding-left: 8px;
+          position: absolute;
+          right: 35px;
+          @include xs-mobile {
+            left: 0;
+          }
+
+          .slider-item {
+            width: 203px;
+            height: 213px; 
+            margin: 20px 5px 0 0; 
+            padding: 15px 15px 0 15px;
+            
+            
+            img {
+              display: block;
+              width: 173px;
+              height: 130px;
+              @include xs-mobile {
+                width: 120px;
+                height: 100px;
+              }
+            }           
+
+            &__text {
+              margin-top: 15px; 
+              font-family: Lato;
+              font-size: 12px;
+              font-weight: normal;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.67;
+              letter-spacing: normal;
+              color: #b6f2ff;
+            }            
+          }
+          .slider-item__active {  
+            width: 203px;
+            height: 213px; 
+            margin: 20px 5px 0 0; 
+            padding: 15px 15px 0 15px;            
+            background-color: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 62px 52px 0 rgba(0, 0, 0, 0.09), 0 16px 32px 0 rgba(0, 0, 0, 0.59);
+            @include xs-mobile {
+              width: 150px;
+              height: 213px; 
+            }
+
+            
+
+            img {
+              display: block;
+              width: 173px;
+              height: 130px;
+              @include xs-mobile {
+                width: 120px;
+                height: 100px;
+              }
+            }  
+          }
+        }
+      }
+
+      &__photos {
+        margin: 33px 0 0 10px;
+
+        &_header {
+          margin-bottom: 22px;
+          position: relative;
+
+          .header-text {
+            font-family: Lato;
+            font-size: 24px;
+            font-weight: 400;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #ffffff;
+          }
+
+          .header-count {
+            font-family: Lato;
+            font-size: 12px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 1px;
+            color: #ffffff;
+            margin-left: 5px;
+          }
+          
+          .header-add {
+            font-family: Lato;
+            font-size: 36px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 3px;
+            color: #ffffff;
+            position: absolute;
+            right: 55px;
+          }
+        }
+
+        &_items {
+          display: flex;
+          flex-direction: row;
+          img {
+            display: block;
+            width: 195px;
+            height: 130px;
+            @include xs-mobile {
+              width: 130px;
+              height: 90px;
+            }
+          }
+        }
+      }
+    }    
+  }
+}
