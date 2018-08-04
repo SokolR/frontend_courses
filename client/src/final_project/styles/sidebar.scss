@@ -12,8 +12,19 @@
   height: auto;
   background-color: #171717;
   z-index: 2;
+  @include desktop-lg {
+    height: auto;
+  }
+  @include desktop {
+    height: auto;
+  }
+  @include laptop {
+    height: 100vh;
+  }
   @include tablet {
-    @include hidden;
+    @include visible;
+    position: absolute;
+    height: 200vh;
   }
   @include mobile {
     @include hidden;

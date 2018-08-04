@@ -12,6 +12,14 @@
     flex-direction: column;
     height: 200vh;
   }
+  @include mobile {
+    flex-direction: column;
+    height: 200vh;
+  }
+  @include xs-mobile {
+    flex-direction: column;
+    height: 200vh;
+  }
 
 
   .profile {
@@ -28,35 +36,30 @@
       left: -210px;
 
       @include desktop-lg {
-        position: absolute;
         top: -20px;
         left: 120px;
       }
 
       @include desktop {
-        position: absolute;
         top: -20px;
-        left: 0;
+        left: 120px;
       }
 
       @include laptop {
-        position: absolute;
         top: -10px;
         left: -210px;
       }
       @include tablet {
-        position: absolute;
-        top: -700px;
+        top: -10px;
         left: 130px;
       }
       @include mobile {
-        position: absolute;
-        top: -700px;
+        top: -10px;
         left: 20px;
       }
       @include xs-mobile {
         position: absolute;
-        top: -700px;
+        top: -10px;
         left: -170px;
       } 
     }
@@ -64,21 +67,17 @@
     &-description {      
       width: 654px;
       display: flex;
-      flex-direction: column; 
+      flex-direction: column;                 
+      @include tablet {   
+        margin-top: 940px;  
+      }
+      @include mobile {
+        margin-top: 940px;        
+      }
       @include xs-mobile {
-        margin-top: 250px;
+        margin-top: 940px;
         padding-left: 200px;
       }  
-      
-      @include mobile {
-        margin-top: 250px;        
-      }
-
-      @include tablet {
-        position: absolute;
-        top: 250px;
-        left: 200px;    
-      }
 
       &__rating {
         width: 120px;

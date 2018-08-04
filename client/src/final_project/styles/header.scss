@@ -37,7 +37,7 @@
 
       }
       @include mobile {
-        justify-content: flex-start;
+        justify-content: flex-end;
         padding-right: 0px;
       }  
       @include xs-mobile {
